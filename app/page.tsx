@@ -31,7 +31,7 @@ export default function Home() {
   
       if (isAvailable) {
         // The schema id of the project
-        const schemaId = "2a6963bc0ca94513b1fda3a0eb34121e"
+        const schemaId = "610b315d54624994bd8d90c567d73451"
   
         // Launch the process of verification
         // This method can be invoked in a loop when dealing with multiple schemas
