@@ -44,7 +44,7 @@ export default function Home() {
 
 
         try {
-          const { taskId, uHash, publicFieldsHash, recipient, validatorAddress, allocatorSignature, validatorSignature } = result;
+          const { taskId, uHash, publicFieldsHash, recipient, validatorAddress, allocatorSignature, validatorSignature } = res;
           
       // Step 1: Verify Allocator Signature
           const taskIdHex = Web3.utils.stringToHex(taskId);
