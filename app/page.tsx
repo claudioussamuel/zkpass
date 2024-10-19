@@ -92,8 +92,8 @@ export default function Home() {
    onClick={verify}
    className='bg-red-600 p-6 text-2xl cursor-pointer z-50 rounded-md text-white'
    type='submit'
-   >Verify Acccount</button>
-     {result &&<VerifyModal closeModal={closeModal}/>}
+   >{result ? "Verify Acccount" : "Account Verified ZKPass"}</button>
+
           <TextBlock 
       header='Our Team'
       subHeader='The Best Engineers in the world'
