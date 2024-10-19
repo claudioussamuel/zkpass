@@ -17,9 +17,10 @@
         },
         "assert": [
           {
-            "key": "kind",
-            "value": "***",
-            "operation": "="
+            "key": "users|0|email",
+            
+            "value": "",
+            "operation": "!="
           }
         ],
         "nullifier": "users|0|localId"
