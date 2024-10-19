@@ -1,0 +1,36 @@
+{
+    "issuer": "Ebefa",
+    "desc": "Platform to buy and sell your events tickets",
+    "website": "https://www.ebefa.com/earnings",
+    "APIs": [
+      {
+        "host": "identitytoolkit.googleapis.com",
+        "intercept": {
+          "url": "v1/accounts:lookup",
+          "method": "POST",
+          "query": [
+            {
+              "key": "AIzaSyBWG_C66KCqcLpeuNzMOQLsXBZHtGSZ81w",
+              "verify": true
+            }
+          ]
+        },
+        "assert": [
+          {
+            "key": "kind",
+            "value": "***",
+            "operation": "="
+          }
+        ],
+        "nullifier": "users|0|localId"
+      }
+    ],
+    "HRCondition": [
+      "Ebefa Ticket Destributor"
+    ],
+    "tips": {
+      "message": "When you successfully log in, please click the 'Start' button to initiate the verification process."
+    },
+    "category": "Social",
+    "id": "0x2a6963bc0ca94513b1fda3a0eb34121e"
+  }
