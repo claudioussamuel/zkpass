@@ -88,11 +88,13 @@ export default function Home() {
       subHeader='We Use ZKPass to verify if you are a destributor on ebefa.com'
       />
      {/* <FeaturedCards/> */}
-   <button
-   onClick={verify}
-   className='bg-red-600 p-6 text-2xl cursor-pointer z-50 rounded-md text-white'
-   type='submit'
-   >{result ? "Verify Acccount" : "Account Verified ZKPass"}</button>
+     <button
+  onClick={verify}
+  className={`${result ? 'bg-green-600' : 'bg-red-600'} p-6 text-2xl cursor-pointer z-50 rounded-md text-white`}
+  type='submit'
+>
+  {result ? "Account Verified ZKPass" : "Verify Account"  }
+</button>
 
           <TextBlock 
       header='Our Team'
